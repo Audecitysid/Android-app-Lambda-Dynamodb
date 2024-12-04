@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bee">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/beelogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/beelogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bee"
+        tools:targetApi="31">
+        <activity
+            android:name=".Bankshow1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Online_payment"
+            android:exported="false" />
+        <activity
+            android:name=".Closing_Account"
+            android:exported="false" />
+        <activity
+            android:name=".Bank_card"
+            android:exported="false" />
+        <activity
+            android:name=".Passbook"
+            android:exported="false" />
+        <activity
+            android:name=".BankStatement"
+            android:exported="false" />
+        <activity
+            android:name=".Integrated_options"
+            android:exported="false" />
+        <activity
+            android:name=".UPI_Interfae"
+            android:exported="false" />
+        <activity
+            android:name=".Display_Bank"
+            android:exported="false" />
+        <activity
+            android:name=".Addbank"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Homepage"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
